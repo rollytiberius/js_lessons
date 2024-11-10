@@ -1,5 +1,5 @@
 function favoriteAnimal(animal) {
-  return animal + " is my favorite animal!";
+  return `Your favorite animal is ${animal}`;
 }
 
 console.log(favoriteAnimal("Goat"));
@@ -24,3 +24,17 @@ function multiply(num1, num2) {
 }
 
 console.log(multiply(5, 6));
+
+//Capitalize
+
+function capitalize(text) {
+  const toLower = text.toLowerCase();
+  console.log(toLower);
+  const array = toLower.split("");
+  console.log(array);
+  array[0] = array[0].toUpperCase();
+  const newString = array.join("");
+  return newString;
+}
+
+console.log(capitalize("ROLAND"));
